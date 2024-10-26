@@ -1,0 +1,25 @@
+west_bengal_tourism/
+├── app/
+│   ├── __init__.py             # Initialize the Flask app
+│   ├── routes.py               # Define app routes (URL paths)
+│   ├── static/
+│   │   ├── css/
+│   │   │   └── style.css       # Main CSS file
+│   │   ├── js/
+│   │   │   └── script.js       # Main JavaScript file
+│   │   └── images/             # All images for the site
+│   │       ├── bengal-hero.jpg
+│   │       ├── kolkata.jpg
+│   │       ├── darjeeling.jpg
+│   │       └── sundarbans.jpg
+│   └── templates/
+│       ├── base.html           # Base template for common layout
+│       ├── index.html          # Homepage template
+│       ├── destinations.html   # Destinations page template
+│       ├── culture.html        # Culture & Heritage page template
+│       ├── tips.html           # Travel Tips page template
+│       └── contact.html        # Contact page template
+├── venv/                       # Virtual environment (optional, for dependencies)
+├── app.py                      # Main application file to run the app
+├── config.py                   # Configuration file for app settings
+└── requirements.txt            # List of dependencies for the project

@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %}Home | Explore West Bengal{% endblock %}
+
+{% block content %}
+<section class="hero">
+  <div class="hero-content">
+    <h1>Discover the Wonders of West Bengal</h1>
+    <p>Experience the rich cultural heritage, scenic beauty, and vibrant festivals of Bengal.</p>
+    <a href="{{ url_for('main.destinations') }}" class="explore-btn">Explore Destinations</a>
+  </div>
+</section>
+
+<section class="highlights" id="destinations">
+  <h2>Top Tourist Destinations</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/kolkata.jpg') }}" alt="Kolkata">
+      <h3>Kolkata</h3>
+      <p>The cultural capital with historical landmarks and vibrant festivals.</p>
+    </div>
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/darjeeling.jpg') }}" alt="Darjeeling">
+      <h3>Darjeeling</h3>
+      <p>Famous for its stunning hills and world-renowned tea plantations.</p>
+    </div>
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/sundarbans.jpg') }}" alt="Sundarbans">
+      <h3>Sundarbans</h3>
+      <p>Explore the UNESCO World Heritage Site and the habitat of Bengal tigers.</p>
+    </div>
+  </div>
+</section>
+{% endblock %}
